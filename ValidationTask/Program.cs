@@ -1,4 +1,6 @@
-﻿namespace ValidationTask
+﻿using System.Xml.Linq;
+
+namespace ValidationTask
 {
     internal class Program
     {
@@ -15,10 +17,10 @@
             lastName = Console.ReadLine();
             Console.Write("Enter age: ");
             age = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter Password: ");
-            password = Console.ReadLine();
-            Console.Write("Enter email address: ");
-            emailAddress = Console.ReadLine();
+            //Console.Write("Enter Password: ");
+            //password = Console.ReadLine();
+            //Console.Write("Enter email address: ");
+            //emailAddress = Console.ReadLine();
 
 
             username = createUserName(firstName,lastName,age);
@@ -31,16 +33,30 @@
         static bool ValidName(string name)
         {
             // name must be at least two characters and contain only letters
+            if (name.Length < 2)
+            {
+                return false;
+            }
+            foreach (char c in name)
+            {
+                if (!Char.IsLetter(c))
+                { return false; }                  
+            }
+            return true;
         }
 
         static bool validAge(int age)
         {
             //age must be between 11 and 18 inclusive
-
+            if (age <= 11 || age >= 18)
+            {
+                return false;
+            }
+            return true;
         }
 
    
-        static bool ValidPassword(string password)
+        static bool ValidPassword(string pass)
         {
             // Check password is at least 8 characters in length
 
@@ -56,6 +72,17 @@
             // AAbbdd!2 = valid (only 2 consecutive letters A and B and only 2 repeating of each)
             // abC461*+ = not valid (abC are 3 consecutive letters)
             // 987poiq! = not valid (987 are consecutive)
+            if (pass.Length > 7) {
+
+                foreach (char c in pass)
+                {
+                    if (Char.IsLetter(c) || Char.IsDigit(c) || Char.IsUpper(c) || Char.IsLower(c))
+                    { return false; }
+                }
+
+
+
+            }
 
 
 
@@ -77,9 +104,9 @@
             // last two characters of last name
             // age
             //e.g. Bob Smith aged 34 would have the username Both34
+            string username = firstName.Substring(0, 2) + lastName.Substring(lastName.Length - 2) + age.ToString();     
 
-
-
+            return username;
         }
 
     }
