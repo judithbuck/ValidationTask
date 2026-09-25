@@ -5,11 +5,13 @@ VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationTask", "ValidationTask\ValidationTask.csproj", "{AC2E5865-A8C3-468D-8CC8-06C5205D255E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidName", "ValidName\ValidName.csproj", "{A785D32E-005D-4697-A4E6-4A52FC2C04C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidName", "ValidName\ValidName.csproj", "{A785D32E-005D-4697-A4E6-4A52FC2C04C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidAge", "ValidAge\ValidAge.csproj", "{C2FEE259-6F7F-4231-97A8-EAF214207B0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidAge", "ValidAge\ValidAge.csproj", "{C2FEE259-6F7F-4231-97A8-EAF214207B0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Username", "Username\Username.csproj", "{94E7D0F8-71B2-44BD-9FEF-CC41E2F3F53F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Username", "Username\Username.csproj", "{94E7D0F8-71B2-44BD-9FEF-CC41E2F3F53F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidPass", "ValidPass\ValidPass.csproj", "{5FEEE8A0-20D5-40E0-91F7-D0F8ECCAC4D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{94E7D0F8-71B2-44BD-9FEF-CC41E2F3F53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94E7D0F8-71B2-44BD-9FEF-CC41E2F3F53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94E7D0F8-71B2-44BD-9FEF-CC41E2F3F53F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FEEE8A0-20D5-40E0-91F7-D0F8ECCAC4D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FEEE8A0-20D5-40E0-91F7-D0F8ECCAC4D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FEEE8A0-20D5-40E0-91F7-D0F8ECCAC4D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FEEE8A0-20D5-40E0-91F7-D0F8ECCAC4D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
